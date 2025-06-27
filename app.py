@@ -1,6 +1,8 @@
 import streamlit as st
 from prompt_engine import run_prompt
 
+# Load your Google API key from secrets
+api_key = st.secrets["GOOGLE_API_KEY"]
 #creating a streamlit page
 st.set_page_config(page_title="bot", page_icon=":robot_face:", layout="wide")
 st.title("prompt engineering Chat bot")
